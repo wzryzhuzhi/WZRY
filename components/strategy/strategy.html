@@ -3,12 +3,19 @@
 		<input type="text" placeholder="请输入你想要搜索的英雄名" />
 	</div>
 	<!--轮播图-->
-	<div class="strBann">
-		
+	<div class="swiper-container" >
+		<div class="swiper-wrapper">
+			<div class="swiper-slide" ng-repeat="item in arrBan">
+				<img  src='{{item.sIMG}}' />
+				<p>{{item.sTitle}}</p>
+			</div>
+		</div>
+		<!-- 如果需要分页器 -->
+		<div class="swiper-pagination"></div>
 	</div>
 	<!--分页面-->
 	<div class="pages">
-		<a ui-sref='.mostNew' href="">最新<span></span></a>
+		<a ui-sref='.mostNew' href="" ng-class="{true:'active',false:'inActive'}[isActive]">最新<span></span></a>
 		<a ui-sref='.newHand' href="">新手<span></span></a>
 		<a ui-sref='.heros' href="">英雄<span></span></a>
 		<a ui-sref='.official' href="">官方<span></span></a>

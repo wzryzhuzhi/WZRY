@@ -8,6 +8,20 @@ angular.module('strategyModule',[])
 			css:'components/strategy/strategy.css'
 		})
 })
-.controller('strategycontrol',['$scope',function($scope){
-	console.log("2222222222222");
+.service('swiper3',['$timeout',function($timeout){
+	$timeout(function(){
+		var mySwiper = new Swiper ('.swiper-container', {
+		    direction: 'horizontal',
+		    loop: true,
+		    autoplay:1500,
+		    pagination: '.swiper-pagination',  
+		 }) 
+	},50);
+}])
+.controller('strategycontrol',['$scope','$http','swiper3',function($scope,$http){
+	$http.get("components/strategy/json/ban.json").success(function(res){
+		console.log(res);
+		$scope.arrBan=res.msg.result;
+		console.log(res.msg.result);
+	});
 }])
