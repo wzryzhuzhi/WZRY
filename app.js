@@ -115,5 +115,5 @@ angular.module("wzry",['ngWaterfall','ui.router','angularCSS','homeModule','matc
 			})
 	})
 	.controller('huodongcontrol',['$scope','$http',function($scope,$http){
-		
+		console.log('hd');
 	}])
