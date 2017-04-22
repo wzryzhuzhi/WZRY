@@ -11,14 +11,14 @@
 		<ul>
 			<li><a ui-sref='.saishi' href="">赛事</a></li>
 			<li><a ui-sref='.yingxiong' href="">英雄</a></li>
-			<li><a ui-sref='.jiesuo' href="">解说</a></li>
+			<li><a ui-sref='.jieshuo' href="">解说</a></li>
 			<li><a ui-sref='.yule' href="">娱乐</a></li>
 			<li><a ui-sref='.guanfang' href="">官方</a></li>
 		</ul>
 	</div>
 	
-	<div ui-view id="videoMain">
-		<div ng-repeat="imgs in arr1" class="p1">
+	<div id="videoMain" ui-view>
+		<div ng-repeat="imgs in arr1" <!--class="p1"-->>
 			<div class="k3"><img src="{{imgs.sIMG}}"/><span></span></div>
 			<div class="k1"><p>{{imgs.sTitle}}</p></div>
 			<div class="k2">
@@ -27,13 +27,4 @@
 			</div>
 		</div>					
 	</div>
-	
-	
-	
-	
-	
-	
-	
-	
->>>>>>> cd2e9e3c458b219ee6b4be8501dc523118c43fc5
 </div>

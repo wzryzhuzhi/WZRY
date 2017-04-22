@@ -1,4 +1,9 @@
-angular.module("wzry",['ui.router','angularCSS','homeModule','matchModule','videoModule','strategyModule','mostNewModule','herosModule','newHandModule','officialModule','collegauesModule'])
+angular.module("wzry",['ui.router','angularCSS','homeModule','matchModule','videoModule','strategyModule',
+/*攻略*/
+'mostNewModule','herosModule','newHandModule','officialModule','collegauesModule',
+/*赛事*/
+'v_saishiModule','yingxiongModule','vjieshuoModule','v_yuleModule','v_guanfangModule'
+])
 .config(function($stateProvider,$urlRouterProvider){
 	$urlRouterProvider.otherwise("/home");
 })
