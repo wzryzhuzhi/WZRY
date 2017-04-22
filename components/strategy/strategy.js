@@ -1,0 +1,13 @@
+angular.module('strategyModule',[])
+.config(function($stateProvider,$urlRouterProvider){
+	$stateProvider
+		.state('strategy',{
+			url:'/strategy',
+			templateUrl:'components/strategy/strategy.html',
+			controller:'strategycontrol',
+			css:'components/strategy/strategy.css'
+		})
+})
+.controller('strategycontrol',['$scope',function($scope){
+	console.log("2222222222222");
+}])

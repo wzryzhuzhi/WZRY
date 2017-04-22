@@ -1,0 +1,13 @@
+angular.module('matchModule',[])
+.config(function($stateProvider,$urlRouterProvider){
+	$stateProvider
+		.state('match',{
+			url:'/match',
+			templateUrl:'components/match/match.html',
+			controller:'matchcontrol',
+			css:'components/match/match.css'
+		})
+})
+.controller('matchcontrol',['$scope',function($scope){
+	$scope.name="第二";
+}])

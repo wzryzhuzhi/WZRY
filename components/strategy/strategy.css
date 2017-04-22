@@ -1,0 +1,58 @@
+#strategy{
+	width: 100%;
+	height: 100%;
+	background-color: #FFFFFF;
+	overflow: auto;
+}
+
+.inputDiv{
+	width: 100%;
+	height: 0.48rem;
+	line-height: 0.48rem;
+	text-align: center;
+}
+.inputDiv>input{
+	background: url(img/seach.png) no-repeat 20px 5px;
+	background-size: 14px 14px;
+	border: none;
+	width: 3.41rem;
+	height: 24px;
+	background-color: #F1F3F5;
+	padding-left: 40px;
+	border-radius: 5px;
+}
+
+.strBann{
+	widows: 100%;
+	height: 1.65rem;
+	background-color: deeppink;
+}
+
+.pages{
+	width: 100%;
+	height: 35px;
+	background-color: #F1F3F5;
+}
+.pages>a{
+	width: 20%;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	float: left;
+	color: #000000;
+	position: relative;
+}
+.pages>a span{
+	width: 4px;
+	height: 4px;
+	position: absolute;
+	border: 4px solid transparent;
+	border-top: 4px solid #D6B77E;
+	top: 35px;
+	left: 48%;
+	display: none;
+}
+
+.pageContent{
+	width: 100%;
+}

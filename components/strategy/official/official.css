@@ -1,0 +1,88 @@
+#official{
+	width: 100%;
+	margin-top: 0.2rem;
+	padding: 0 0.2rem;
+}
+
+#official>ul>li{
+	height: 0.54rem;
+	margin-bottom: 0.3rem;
+}
+#official>ul>li>a{
+	float: left;
+	width: 0.54rem;
+	height: 0.54rem;
+	margin-right: 0.06rem;
+}
+#official>ul>li>a>img{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}
+#official>ul>li>div{
+	width: 2.75rem;
+	height: 0.54rem;
+	float: left;
+}
+#official>ul>li>div>.topSpan{
+	width: 2.75rem;
+	height: 0.21rem;
+	line-height: 0.21rem;
+}
+#official>ul>li>div>.topSpan>span:first-child{
+	width: 2.12rem;
+	float: left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #000000;
+}
+#official>ul>li>div>.topSpan>span:last-child{
+	float: right;
+	color: #C0C5C8;
+}
+#official>ul>li>div>.topSpan>span:last-child>span{
+	width: 12px;
+	height: 11px;
+	float: right;
+	background: url(../img/mn1.jpg) no-repeat;
+	background-size: 12px 11px;
+	margin-top: 5px;
+	margin-left: 3px;
+}
+#official>ul>li>div>.botSpan{
+	width: 2.75rem;
+	height: 0.36rem;
+}
+#official>ul>li>div>.botSpan>span:first-child{
+	width: 2.12rem;
+	height: 0.36rem;
+	float: left;
+	
+	word-break: break-all;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient:vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	
+	color: #C0C5C8;
+	font-size: 12px;
+	padding-top: 2px;
+}
+#official>ul>li>div>.botSpan>span:last-child{
+	float: right;
+	margin-top: 0.18rem;
+	color: #C0C5C8;
+}
+
+.clickMore{
+	width: 100%;
+	height: 70px;
+}
+.clickMore>p{
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+}

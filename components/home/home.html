@@ -1,0 +1,59 @@
+<div id="box1">
+	<div class="banner">
+		<div class="swiper-container">
+   			<div class="swiper-wrapper">
+	       		<div class="swiper-slide" ng-repeat="item in homeSwiper">
+	        		<img src="{{item.imgurl}}"/>
+	        		<div class="banner_titie">{{item.title}}</div>
+	       		</div>
+   			</div>
+		    <!-- 如果需要分页器 -->
+		    <div class="swiper-pagination"></div>
+		</div>
+	</div>
+	<div class="small_title">
+		<ul>
+			<li ng-repeat="item in arrSmall">
+				<a href="javascript:void(0)">
+					<i></i>
+					<p>{{item.title}}</p>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="hot_advisory">
+		<h3 class="hot_title"><span></span>热点咨询<a href=""></a></h3>
+		<ul>
+			<li><a href=""><span>公告</span>&nbsp;|&nbsp;近期“登录游戏超时”异常公告说明<span>04/20</span></a></li>
+			<li><a href=""><span>新闻</span>&nbsp;|&nbsp;《王者荣耀》实名制注册引导<span>04/20</span></a></li>
+			<li><a href=""><span>赛事</span>&nbsp;|&nbsp;KPL第五周前瞻：常规赛即将过半，从排名大战进入保级大战<span>04/20</span></a></li>
+		</ul>
+	</div>
+	<div class="hot_look">
+		<h3 class="hot_title"><span></span>精彩视频<a href="javascript:void(0)"></a></h3>
+		<ul>
+			<li ng-repeat="item in arrHomeVideos">
+				<a href="">
+					<img src="{{item.sIMG}}"/>
+					<p>{{item.sTitle}}</p>
+					<span></span>
+				</a>
+				<div class="home_infor"><span>{{item.iTotalPlay}}</span><span>{{item.sIdxTime}}</span></div>
+			</li>
+		</ul>
+	</div>
+	<div class="hot_plan">
+		<h3 class="hot_title"><span></span>精品攻略<a href="javascript:void(0)"></a></h3>
+		<ul>
+			<li ng-repeat="item in arrHomePlans">
+				<a href="">
+					<img src="{{item.sIMG}}"/>
+					<div class="home_jingping">
+						<h4>{{item.sTitle}}<span>{{item.iTotalPlay}}&nbsp;<span></span></span></h4>
+						<p>{{item.sDesc}}<span>{{item.sIdxTime}}</span></p>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
