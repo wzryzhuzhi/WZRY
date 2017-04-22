@@ -9,5 +9,5 @@ angular.module('yingxiongModule',[])
         })
 })
 .controller('v_yingxiongCtrl',['$scope',function($scope){
-	
+		
 }])

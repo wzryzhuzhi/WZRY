@@ -26,6 +26,18 @@ angular.module('videoModule',[])
 		$http.get('components/video/json/赛事.json').success(function(res){
 			$scope.arr1=res.msg.result;	
 		});
+		$http.get('components/video/json/官方.json').success(function(res){
+			$scope.arr2=res.msg.result;	
+		});
+		$http.get('components/video/json/yule.json').success(function(res){
+			$scope.arr3=res.msg.result;	
+		});
+		$http.get('components/video/json/英雄.json').success(function(res){
+			$scope.arr4=res.msg.result;	
+		});
+		$http.get('components/video/json/解说.json').success(function(res){
+			$scope.arr5=res.msg.result;	
+		});
 
 }]);
     

@@ -1,6 +1,8 @@
-<ul class="drinkList">
-	<li>龙夫山泉1</li>
-	<li>龙夫山泉2</li>
-	<li>龙夫山泉3</li>
-	<li>龙夫山泉4</li>
-</ul>
+	<div ng-repeat="imgs in arr5" class="p1">
+			<div class="k3"><a href="{{imgs.sUrl}}"><img src="{{imgs.sIMG}}"/><span></span></a></div>
+			<div class="k1"><a href="{{imgs.sUrl}}"><p>{{imgs.sTitle}}</p></a></div>
+			<div class="k2">
+				<span class="sp1">{{imgs.iTotalPlay}}</span>
+				<span class="sp2">{{imgs.sIdxTime}}</span>
+			</div>
+	</div>
