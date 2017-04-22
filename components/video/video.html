@@ -1,8 +1,10 @@
 <div id="video">
-	<div class="swiper-container" id="lunbo">
+	<div class="swiper-container" id="lunbo" >
 		<div class="swiper-wrapper">
-			<div class="swiper-slide" ng-repeat="item in arr"><a href="{{item.sUrl}}"><img src="{{item.sIMG}}" /></a></div>
-			<!--<div class="text" ng-repeat="item in arr">{{item.sTitle}}</div>-->
+			<div class="swiper-slide" ng-repeat="item in arr"><a href="{{item.sUrl}}"><img src="{{item.sIMG}}" /></a>
+				<div class="text">{{item.sTitle}}</div>
+			</div>
+			
 		</div>
 		<div class="swiper-pagination"></div>
 	</div>
@@ -18,13 +20,14 @@
 	</div>
 	
 	<div id="videoMain" ui-view>
-		<div ng-repeat="imgs in arr1" class="p1">			
-			<div class="k3"><a href="{{imgs.sUrl}}"><img src="{{imgs.sIMG}} class="imgy"/><span><img src="components/video/img/01.gif"id="imgt"/></span></a></div>
+		<div ng-repeat="imgs in arr1" class="p1">
+			<img src="components/video/img/01.gif"id="imgt"/>		
+			<div class="k3"><a href="{{imgs.sUrl}}"><img src="{{imgs.sIMG}}"/></a></div>
 			<div class="k1"><a href="{{imgs.sUrl}}"><p>{{imgs.sTitle}}</p></a></div>
 			<div class="k2">
-				<span class="sp1"><span></span>{{imgs.iTotalPlay}}</span>
+				<span class="sp1"><img src="components/video/img/02.gif"/>{{imgs.iTotalPlay}}</span>
 				<span class="sp2">{{imgs.sIdxTime}}</span>
-			</div>
+			</div>	
 		</div>					
 	</div>
 </div>
