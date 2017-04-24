@@ -1,2 +1,28 @@
-<h1>11111111111111111</p>
-<h1>{{name}}</p>
+<div id="box4">
+<!--赛事-头部-->
+	<div class="m_title">
+		<h2>KPL&nbsp;王者职业联赛<span>官方举办</span></h2>
+		<p>2017-03-24至2017-07-08</p>
+		<span>进行中</span>
+	</div>
+<!--赛事-mvp视频-->	
+	<div class="m_mvp_video">
+		<img src="https://ossweb-img.qq.com/upload/webplat/info/yxzj/20170324/498291341526981_BigAbbr.jpg" alt="" />
+		<div class="m_bobtn">
+			<div class="m_bb"></div>
+		</div>
+	</div>
+<!--赛事-资讯-->
+	<div class="m_saishi_title">
+		<p>赛事资讯</p>
+		<div class="match_games">
+			<ul  class="waterfall-list" ng-waterfall >
+				<li ng-repeat="item in matchs"  >
+					<a href="{{item.sUrl}}">{{item.sTitle}}</a>
+					<span class="m_times">{{item.sCreated}}</span>
+				</li>
+				 <div class="loadMore" ng-if="loadMore" ng-infinite-scroll ng-click="loadMoreData()">{{text}}</div>
+			</ul>
+		</div>
+	</div>
+</div>

@@ -13,27 +13,29 @@
 	</div>
 	<div class="small_title">
 		<ul>
-			<li ng-repeat="item in arrSmall">
-				<a href="javascript:void(0)">
-					<i></i>
-					<p>{{item.title}}</p>
-				</a>
-			</li>
+			<li><a ui-sref="heros" href=""><p>英雄介绍</p></a></li>
+			<li><a href="javascript:void(0)"><p>活动</p></a></li>
+			<li><a ui-sref="match" href=""><p>赛事</p></a></li>
+			<li><a ui-sref="exper" href=""><p>体验服</p></a></li>
+			<li><a href="javascript:void(0)"><p>资讯</p></a></li>
+			<li><a ui-sref="community" href=""><p>社区</p></a></li>
+			<li><a href="javascript:void(0)"><p>新手</p></a></li>
+			<li><a href="javascript:void(0)"><p>故事站</p></a></li>
 		</ul>
 	</div>
 	<div class="hot_advisory">
 		<h3 class="hot_title"><span></span>热点咨询<a href=""></a></h3>
 		<ul>
-			<li><a href=""><span>公告</span>&nbsp;|&nbsp;近期“登录游戏超时”异常公告说明<span>04/20</span></a></li>
-			<li><a href=""><span>新闻</span>&nbsp;|&nbsp;《王者荣耀》实名制注册引导<span>04/20</span></a></li>
-			<li><a href=""><span>赛事</span>&nbsp;|&nbsp;KPL第五周前瞻：常规赛即将过半，从排名大战进入保级大战<span>04/20</span></a></li>
+			<li><a href="http://pvp.qq.com/webplat/info/news_version3/15592/24418/24987/24988/m15626/201704/575766.shtml"><span>公告</span>&nbsp;|&nbsp;近期“登录游戏超时”异常公告说明<span>04/20</span></a></li>
+			<li><a href="http://pvp.qq.com/webplat/info/news_version3/15592/24418/24987/24988/m15626/201704/575999.shtml"><span>新闻</span>&nbsp;|&nbsp;《王者荣耀》实名制注册引导<span>04/20</span></a></li>
+			<li><a href="http://pvp.qq.com/webplat/info/news_version3/15592/24418/24987/24989/m15626/201704/575321.shtml"><span>赛事</span>&nbsp;|&nbsp;KPL第五周前瞻：常规赛即将过半，从排名大战进入保级大战<span>04/20</span></a></li>
 		</ul>
 	</div>
 	<div class="hot_look">
 		<h3 class="hot_title"><span></span>精彩视频<a href="javascript:void(0)"></a></h3>
 		<ul>
 			<li ng-repeat="item in arrHomeVideos">
-				<a href="">
+				<a href="{{item.sUrl}}">
 					<img src="{{item.sIMG}}"/>
 					<p>{{item.sTitle}}</p>
 					<span></span>
@@ -46,7 +48,7 @@
 		<h3 class="hot_title"><span></span>精品攻略<a href="javascript:void(0)"></a></h3>
 		<ul>
 			<li ng-repeat="item in arrHomePlans">
-				<a href="">
+				<a href="{{item.sUrl}}">
 					<img src="{{item.sIMG}}"/>
 					<div class="home_jingping">
 						<h4>{{item.sTitle}}<span>{{item.iTotalPlay}}&nbsp;<span></span></span></h4>

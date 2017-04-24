@@ -1,0 +1,17 @@
+
+#heros{height:100%;width:100%;background:#f1f1f1;overflow:auto;}
+#heros>.heros_nav{height:0.6rem;display:flex;align-items:center;font-size:0.13rem;}
+#heros>.heros_nav>ul{width:100%;height:50%;border-bottom:1px solid #E4E4E4;}
+#heros>.heros_nav>ul>li{width:14%;height:100%;float:left;}
+#heros>.heros_nav>ul>li>a{width:100%;height:100%;display:block;display:flex;align-items:center;justify-content:center;}
+/*英雄列表*/
+#heros>.heros_list{width:100%;display:flex;justify-content:center;}
+#heros>.heros_list>ul{width:3.5rem;}
+#heros>.heros_list>ul>li{width:0.7rem;height:0.9rem;float:left;margin-bottom:0.2rem;margin-right:0.23rem;}
+#heros>.heros_list>ul>li:nth-child(4n){margin-right: 0;}
+#heros>.heros_list>ul>li>a{width:100%;height:100%;display:block;}
+#heros>.heros_list>ul>li>a>img{width:0.7rem;border-radius: 5px;}
+#heros>.heros_list>ul>li>a>p{width:0.7rem;font-size:0.1rem;color:#6d6d6f;height:0.16rem;line-height:0.16rem;margin-top:0.05rem;text-align:center;}
+/*切换样式*/
+.he_active{background:none;}
+.he_inactive{background:url(hreos_img/hero_nav.png)no-repeat;background-size:auto ;color:#fff;}

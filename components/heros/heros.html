@@ -1,0 +1,26 @@
+<div id="heros">
+	<div class="heros_nav">
+		<ul>
+			<li ng-click="herosort()"><a href="" ng-class="{true: 'he_active', false: 'he_inactive'}[he_isActive0]">全部</a></li>
+			<li ng-click="herosort('战士')"><a href="" ng-class="{true: 'he_active', false: 'he_inactive'}[he_isActive]">战士</a></li>
+			<li ng-click="herosort('法师')"><a href="" ng-class="{true: 'he_active', false: 'he_inactive'}[he_isActive]">法师</a></li>
+			<li ng-click="herosort('坦克')"><a href="" ng-class="{true: 'he_active', false: 'he_inactive'}[he_isActive]">坦克</a></li>
+			<li ng-click="herosort('刺客')"><a href="" ng-class="{true: 'he_active', false: 'he_inactive'}[he_isActive]">刺客</a></li>
+			<li ng-click="herosort('射手')"><a href="" ng-class="{true: 'he_active', false: 'he_inactive'}[he_isActive]">射手</a></li>
+			<li ng-click="herosort('辅助')"><a href="" ng-class="{true: 'he_active', false: 'he_inactive'}[he_isActive]">辅助</a></li>
+		</ul>
+		<div class="clearfix"></div>
+	</div>
+	<div class="heros_list">
+		<ul>
+			<li ng-repeat="item in arrHeros | filter:evensort">
+				<a href="">
+					<img src="{{item.imgUrl}}"/>
+					<p>{{item.name}}</p>
+				</a>
+			</li>
+		</ul>
+		<div class="clearfix"></div>
+	</div>
+</div>
+

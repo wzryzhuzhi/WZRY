@@ -26,3 +26,11 @@ body,html{
 html{
 	font-size:100px;
 }
+.clearfix{
+    content: '';
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}

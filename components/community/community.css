@@ -1,0 +1,16 @@
+#head{display: none;}
+#community{height:100%;width:100%;background:#fff;}
+
+/*社区-头部*/
+#community>.top_head{position:fixed;top:0;background:#fff;width:100%;height:40px;border-bottom:1px solid #edecea;display:flex;justify-content: center;}
+#community>.top_head>.current{font-size:16px;color:#000;width:122px;padding: 0 16px 0 8px;height:40px;text-align:center;line-height:40px;position:relative;}
+#community>.top_head>span{position:absolute;top:0;left:0;display:block;text-align:center;line-height:40px;height:40px;width:40px;font-size:30px;}
+#community>.top_head>.current>.cusanj{width:0;border:6px solid transparent;border-top:6px solid #ccc;position:absolute;right:3px;top:17px;}
+#community>.top_head>ul{width:1.2rem;border-left:1px solid #edecea;border-right:1px solid #edecea;position:absolute;top:40px;left:1.27rem;}
+#community>.top_head>ul>li{width: 100%;height:0.3rem;border-bottom:1px solid #edecea;background:#fff;}
+#community>.top_head>ul>li>a{display:block;width:100%;height:100%;line-height:0.3rem;text-indent:0.08rem;color:#333;}
+/*社区-关注*/
+#community>.con_guanzhu{width:100%;height:0.99rem;padding:0.12rem 0.16rem 0 0.12rem;}
+#community .con_guanzhu_nei{width:100%;height:100%;border-bottom:1px solid #ccc}
+#community .con_guanzhu_nei>a{width:100%;height:100%;padding-bottom:0.12rem;}
+#community a>img{height:0.75rem;height:0.75rem;margin-right:0.15rem;}

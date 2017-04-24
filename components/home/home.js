@@ -27,7 +27,6 @@ angular.module('homeModule',[])
 	/*轮播部分*/
 	$http.get('components/home/home_json/homeban.json').success(function(res){
 		$scope.homeSwiper=res.banner
-		$scope.arrSmall=res.small
 	})
 	/*视频部分*/
 	$http.get('components/home/home_json/home.json').success(function(res){

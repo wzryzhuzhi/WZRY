@@ -1,38 +1,5 @@
 	{
-	"small":[
-		    {
-		    	"title":"英雄介绍",
-		        "imgurl":""
-		    },
-		    {
-		    	"title":"活动",
-		        "imgurl":""
-		    },
-		    {
-		    	"title":"赛事",
-		        "imgurl":""
-		    },
-		    {
-		    	"title":"体验服",
-		        "imgurl":""
-		    },
-		    {
-		    	"title":"咨询",
-		        "imgurl":""
-		    },
-		    {
-		    	"title":"社区",
-		        "imgurl":""
-		    },
-		    {
-		    	"title":"新手",
-		        "imgurl":""
-		    },
-		    {
-		    	"title":"故事站",
-		        "imgurl":""
-		    }
-		 ],
+	"small":[],
 	
 	"banner":[
 			    {

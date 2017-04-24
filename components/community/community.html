@@ -1,0 +1,22 @@
+<div id="community">
+	<div class="top_head">
+		<span><a ui-sref="home" href=""><</a></span>
+		<div class="current" ng-click="menushow()">{{menuname}}<div class="cusanj"></div></div>	
+		<ul class="con_menulist" ng-show="menuShow">
+			<li ng-repeat="item in arrMenulist" ng-click="addmenu(item.forum_title)">
+				<a href="">{{item.forum_title}}</a>
+			</li>
+		</ul>
+	</div>
+	<div class="con_guanzhu">
+		<div class="con_guanzhu_nei">
+			<a href="http://agame.qq.com/game/200330345/detail.shtml?ADTAG=game.web.yxzj#">
+				<img src="https://shp.qpic.cn/gqq_photo/2016012719/8BBA575B-E55D-2CD6-0DFD-ECAE52C95FB6-650A026E0D21/197"/>
+			</a>	
+			<div class="c_guan">
+				<p>王者荣耀</p>
+				<p><span>关注</span></p>
+			</div>
+		</div>
+	</div>
+</div>
