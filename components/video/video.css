@@ -12,7 +12,7 @@
 #video .videoMenu li{width:20%;height: 100%;float: left;text-align: center;line-height:0.35rem ;}
 #video .videoMenu li:hover{background-color:#DABB82 ;}
 
-#video #videoMain {width: 100%;height: 5.74rem; margin-top:0.125rem;padding: 0 0.14rem;margin-bottom: 0.2rem;}
+#video #videoMain {width: 100%;height: 100%; margin-top:0.125rem;padding: 0 0.14rem;margin-bottom: 0.2rem;}
 #video #videoMain .p1{position: relative; width: 50%;height:1.57.84rem;margin: 0 0 0.1rem 0; float: left;font-size: 0.14rem;}
 #video #videoMain .p1 .k3 img{width: 1.68rem;height:0.95rem;border-radius: 6px;vertical-align: top;}
 #video #videoMain #imgt{border-radius: 50%; position: absolute;left: 40%;top: 35%; width: 0.295rem;height: 0.285rem;}

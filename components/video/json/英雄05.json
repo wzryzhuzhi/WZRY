@@ -1,0 +1,51 @@
+{
+    "status": "0",
+    "msg": {
+        "result": [
+            {
+                "iVideoId": "120728",
+                "iType": "641",
+                "iSubType": "1264",
+                "sAuthor": "TGL",
+                "iFrom": "1",
+                "sTitle": "大逆风不服输，马可波罗一波逆袭",
+                "sDesc": "大逆风局依然不放弃，进击的马可波罗一波逆袭",
+                "sUrl": "",
+                "sIMG": "//itea-cdn.qq.com/file/tgl/20170417/1.1492396410.jpg",
+                "iTime": "16:05",
+                "iTotalPlay": "2.7万",
+                "iMark": "0",
+                "sExt1": "914,926,1240",
+                "sExt2": "",
+                "sExt3": "",
+                "sIdxTime": "2017-04-20 19:41:24",
+                "sCreated": "2017-04-20 19:41:24",
+                "iBiz": "18"
+            },
+            {
+                "iVideoId": "120675",
+                "iType": "641",
+                "iSubType": "657",
+                "sAuthor": "TGL",
+                "iFrom": "1",
+                "sTitle": "鲁班七号轻松3杀获胜，输出完全不是问题",
+                "sDesc": "鲁班召唤河豚飞艇进行空中支援，河豚飞艇每秒对范围内随机一个敌人投掷炸弹，鲁班七号轻松3杀获胜，输出完全不是问题。",
+                "sUrl": "",
+                "sIMG": "//itea-cdn.qq.com/file/tgl/20170420/1.1492619717.jpg",
+                "iTime": "10:07",
+                "iTotalPlay": "4.2万",
+                "iMark": "0",
+                "sExt1": "606,914,926",
+                "sExt2": "",
+                "sExt3": "",
+                "sIdxTime": "2017-04-20 19:37:08",
+                "sCreated": "2017-04-20 19:37:08",
+                "iBiz": "18"
+            }
+        ],
+        "total": "2582",
+        "pagesize": "2",
+        "totalpage": "1291",
+        "page": "1"
+    }
+}
