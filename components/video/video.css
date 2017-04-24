@@ -1,19 +1,19 @@
 
-#video{width: 100%;height: 100%;background-color: #fff;font-size: 0.12rem;}
-#video .p2{width: 100%;height: 3.3rem;background-color: blue;}
+/*#video{width: 100%;height: 100%;background-color: red;font-size: 0.12rem;}*/
+#video .p2{width: 100%;height: 3.3rem;}
 #video .p2 img{width: 100%;height: 100%;}
 #video .p2 div{position: absolute;margin-top: -2.10rem;padding-left: 15px; height: 0.96rem; width: 100%; line-height: 0.84rem;color: #fff;font-size: 0.36rem;}
 
-#video {width: 100%;height: 100%;font-size: 0.12rem;z-index: 0;background-color: #fff;margin-bottom:138px ;}
+#video {width: 100%;height: 15.55rem;font-size: 0.12rem;z-index: 0;background-color: #fff;margin-bottom:138px ;}
 #video #lunbo{position: relative; width: 100%;height: 1.65rem;}
 #video #lunbo img{width: 100%;height: 100%;}
 #video #lunbo .text{line-height:0.48rem;font-size: 0.16rem;position: absolute;bottom: 0;width: 100%;height: 0.48rem;background-color: rgba(0,0,0,0.5);  color: #fff;z-index: 999;}
-#video .videoMenu{ width: 100%;height: 0.4222rem ;background-color: #F1F3F5;font-size: 0.16rem;}
-#video .videoMenu li{width:20%;height: 100%;float: left;text-align: center;line-height:0.4222rem ;}
+#video .videoMenu{ width: 100%;height: 0.35rem ;background-color: #F1F3F5;font-size: 0.14rem;}
+#video .videoMenu li{width:20%;height: 100%;float: left;text-align: center;line-height:0.35rem ;}
 #video .videoMenu li:hover{background-color:#DABB82 ;}
 
-#video #videoMain {width: 100%;margin-top:0.125rem;padding: 0 0.14rem;}
-#video #videoMain .p1{position: relative; width: 50%;height:1.57.84rem;margin: 0 0 0.2rem 0; float: left;font-size: 0.14rem;}
+#video #videoMain {width: 100%;height: 5.74rem; margin-top:0.125rem;padding: 0 0.14rem;margin-bottom: 0.2rem;}
+#video #videoMain .p1{position: relative; width: 50%;height:1.57.84rem;margin: 0 0 0.1rem 0; float: left;font-size: 0.14rem;}
 #video #videoMain .p1 .k3 img{width: 1.68rem;height:0.95rem;border-radius: 6px;vertical-align: top;}
 #video #videoMain #imgt{border-radius: 50%; position: absolute;left: 40%;top: 35%; width: 0.295rem;height: 0.285rem;}
 #video #videoMain .p1 div{width: 100%;}
@@ -23,4 +23,4 @@
 #video #videoMain .p1 .k2 .sp1 img{width: 0.115rem;height: 0.08rem;margin-right: 4px;}
 #video #videoMain .p1 .k2 .sp2{display:inline-block;width: 0.979rem;height: 0.17rem;overflow: auto; float: right;text-align: center;}
 
-
+#video .load{ line-height: 0.3rem; clear:both;text-align:center;width: 100%;height: 0.3rem;font-size: 0.15rem;}

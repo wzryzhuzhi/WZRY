@@ -14,7 +14,7 @@ angular.module('videoModule',[])
 		var mySwiper = new Swiper ('.swiper-container', {
 		    direction: 'horizontal',
 		    loop: true,
-		    autoplay:500,
+		    autoplay:1000,
 		    pagination: '.swiper-pagination',  
 		 }) 
 	},50);
@@ -38,7 +38,10 @@ angular.module('videoModule',[])
 		$http.get('components/video/json/解说.json').success(function(res){
 			$scope.arr5=res.msg.result;	
 		});
-
+	
+//		$scope.fun=function(){
+//			console.log(1243)
+//		}
 }]);
     
 
