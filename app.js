@@ -69,3 +69,17 @@ angular.module("wzry",['ngWaterfall','ui.router','angularCSS','homeModule','matc
 			}
 		})
 	}])
+	
+/*4.首页-论坛*/
+	.config(function($stateProvider,$urlRouterProvider){
+		$stateProvider
+			.state('story',{
+				url:'/story',
+				templateUrl:'components/story/story.html',
+				controller:'storycontrol',
+				css:'components/story/story.css'
+			})
+	})
+	.controller('storycontrol',['$scope','$http',function($scope,$http){
+		alert('故事');
+	}])
