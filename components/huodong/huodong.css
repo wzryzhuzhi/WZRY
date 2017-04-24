@@ -1,0 +1,58 @@
+#huodong{
+	width: 100%;
+	height: 100%;
+	background-color: #F1F1F1;
+	overflow: auto;
+}
+#huodong>.hdTop{
+	width: 100%;
+	height: 0.31rem;
+}
+#huodong>.hdTop>ul{
+	width: 100%;
+	height: 100%;
+}
+#huodong>.hdTop li{
+	float: left;
+	list-style: none;
+	width: 33.33%;
+	height: 0.31rem;
+	text-align: center;
+	line-height: 0.31rem;
+	color: #000;
+	border: 1px solid #E0E0E0;
+	border-top: none;
+	background-color: #0C75A6;
+}
+
+#huodong>.huodongDetails{
+	width: 100%;
+}
+#huodong>.huodongDetails li{
+	width: 100%;
+	height: 1.12rem;
+	border-bottom: 1px solid #E0E0E0;
+	padding: 0 0.08rem;
+}
+#huodong>.huodongDetails li>div{
+	height: 0.87rem;
+	margin-top: 0.12rem;
+}
+#huodong>.huodongDetails li>div>.hdLeftImg{
+	width: 1.53rem;
+	height: 0.87rem;
+	float: left;
+	border: 1px solid #E0E0E0;
+	margin-right: 0.15rem;
+	background: url(hdImg/hd1.jpg) no-repeat center center;
+	background-size: 1.53rem 0.87rem;
+}
+#huodong>.huodongDetails li>div>p{
+	display: inline-block;
+	color: #1E83E5;
+}
+#huodong>.huodongDetails li>div>span{
+	float: right;
+	margin-bottom: 0;
+	margin-top: 0.65rem;
+}

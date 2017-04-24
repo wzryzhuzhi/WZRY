@@ -1,16 +1,46 @@
 #head{display: none;}
-#community{height:100%;width:100%;background:#fff;}
+#community{height:100%;width:100%;background:#fff;z-index:99;background:#ccc;overflow:auto;}
 
 /*社区-头部*/
-#community>.top_head{position:fixed;top:0;background:#fff;width:100%;height:40px;border-bottom:1px solid #edecea;display:flex;justify-content: center;}
-#community>.top_head>.current{font-size:16px;color:#000;width:122px;padding: 0 16px 0 8px;height:40px;text-align:center;line-height:40px;position:relative;}
-#community>.top_head>span{position:absolute;top:0;left:0;display:block;text-align:center;line-height:40px;height:40px;width:40px;font-size:30px;}
-#community>.top_head>.current>.cusanj{width:0;border:6px solid transparent;border-top:6px solid #ccc;position:absolute;right:3px;top:17px;}
-#community>.top_head>ul{width:1.2rem;border-left:1px solid #edecea;border-right:1px solid #edecea;position:absolute;top:40px;left:1.27rem;}
-#community>.top_head>ul>li{width: 100%;height:0.3rem;border-bottom:1px solid #edecea;background:#fff;}
-#community>.top_head>ul>li>a{display:block;width:100%;height:100%;line-height:0.3rem;text-indent:0.08rem;color:#333;}
+#community .top_head{position:fixed;top:0;background:#fff;width:100%;height:40px;border-bottom:1px solid #edecea;display:flex;justify-content: center;z-index:99;}
+#community .top_head>.current{overflow:hidden;font-size:16px;color:#000;width:122px;padding: 0 16px 0 8px;height:40px;text-align:center;line-height:40px;position:relative;}
+#community .top_head>span{position:absolute;top:0;left:0;display:block;text-align:center;line-height:40px;height:40px;width:40px;font-size:30px;}
+#community .top_head>.current>.cusanj{width:0;border:6px solid transparent;border-top:6px solid #ccc;position:absolute;right:3px;top:17px;}
+#community .top_head>ul{width:1.2rem;border-left:1px solid #edecea;border-right:1px solid #edecea;position:absolute;top:40px;left:1.27rem;}
+#community .top_head>ul>li{width: 100%;height:0.3rem;border-bottom:1px solid #edecea;background:#fff;}
+#community .top_head>ul>li>a{display:block;width:80%;height:100%;line-height:0.3rem;text-indent:0.08rem;color:#333;overflow:hidden;text-overflow:ellipsis;white-space: nowrap;}
 /*社区-关注*/
-#community>.con_guanzhu{width:100%;height:0.99rem;padding:0.12rem 0.16rem 0 0.12rem;}
-#community .con_guanzhu_nei{width:100%;height:100%;border-bottom:1px solid #ccc}
-#community .con_guanzhu_nei>a{width:100%;height:100%;padding-bottom:0.12rem;}
-#community a>img{height:0.75rem;height:0.75rem;margin-right:0.15rem;}
+#community .con_guanzhu{width:100%;background:#fff;padding-bottom:0.04rem;}
+#community .con_guanzhu_nei{width:3.75rem;height:0.99rem;border-bottom:1px solid #e9e9e9;padding:0.12rem 0.16rem 0 0.16rem;}
+#community .con_guanzhu_nei>a{height:0.75rem;width:0.75rem;display:inline-block;margin-right:0.12rem;}
+#community .con_guanzhu_nei>a>img{height:100%;width:100%;}
+#community .c_guan{width:2.56rem;height:100%;float:right;}
+#community .c_guan>h3{height:0.22rem;line-height:0.22rem;color:#000;}
+#community .c_guan>p{height:0.26rem;line-height:0.26rem;color:gray;font-size:0.1rem;}
+#community .c_guan>div{height:0.26rem;width:0.65rem;background:#ff5c51;border-radius:5px;}
+#community .c_guan>div>a{width:100%;height:100%;display:inline-block;color:#fff;line-height:0.26rem;text-align:center;font-size:0.12rem;}
+#community .c_guan>div>a>i{font-size:0.24rem;vertical-align:middle;line-height:0.26rem;margin-right:0.05rem;}
+#community .con_reds{height:0.51rem;padding-top:0.1rem;margin:0 0.16rem;background:url(img/hot.png)no-repeat left 0.14rem;position:relative;}
+#community .con_reds>a{width:100%;height:100;padding-bottom:0.1rem;display:block;border-bottom:1px solid #D4D9DE;}
+#community .con_reds>a>.title{color:#8C9195;font-size:0.1rem;text-indent:0.22rem;height:0.3rem;line-height:0.3rem;width:1.3rem;}
+#community .con_reds>a>.user{width:1.6rem;height:0.24rem;position:absolute;right:0;top:0.13rem;z-index:40;}
+#community .con_reds>a>.user>span{display:inline-block;width:0.24rem;height:100%;margin-right:0.04rem;}
+#community .con_reds>a>.user>span>img{width:100%;height;100%;border-radius:50%;}
+#community .text_list{width:3.43;margin:0 0.16rem;padding-top:0.14rem;}
+#community .text_list>li{width:100%;height:0.3rem;padding-bottom:0.1rem;} 
+#community .text_list>li>a{height:0.2rem;display:block;width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#666;line-height:0.2rem;}
+#community .text_list>li>a>i{height:0.18rem;width:0.32rem;display:inline-block;border:1px solid #ff5c50;color:#ff5c50;font-size:0.1rem;line-height: 0.18rem;text-align:center;margin-top:0.02rem;margin-right:0.05rem;border-radius:3px;}
+#community .text_list>li>a>i:nth-child(2){color:#a5a3ea;border:1px solid #a5a3ea;width:0.2rem;}
+ /*社区-内容*/
+#community .pindao{height:0.6rem;width:3.6rem;background:#ff8000;margin:0.08rem auto;position:relative;}
+#community .pindao>a{display:block;width:100%;height:100%;color:#fff;padding:0.04rem 0 0 0.1rem;}
+#community .pindao>a>img{width:2.18rem;height:0.78rem;position:absolute;bottom:0;right:0;}
+#community .pindao>a>strong{font-size:0.25rem;font-weight: 400;}
+#community .pindao>a>p{font-size:0.1rem;}
+
+#community #con_ul{width:100%;background:#fff;margin-top:0.08rem;}
+#con_ul>li{padding:0 0.14rem;}
+#con_ul .g-box{width:100%;}
+#con_ul .g-user{height:0.5rem;}
+#con_ul .g-user>a:first-child{width:0.32rem;height:0.32rem;margin-right:0.06rem;}
+#con_ul .g-user>a>img{}
