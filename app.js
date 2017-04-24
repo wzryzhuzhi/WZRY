@@ -2,7 +2,8 @@ angular.module("wzry",['ngWaterfall','ui.router','angularCSS','homeModule','matc
 /*攻略*/
 'mostNewModule','herosModule','newHandModule','officialModule','collegauesModule',
 /*赛事*/
-'v_saishiModule','yingxiongModule','vjieshuoModule','v_yuleModule','v_guanfangModule'
+'v_saishiModule','yingxiongModule','vjieshuoModule','v_yuleModule','v_guanfangModule',
+
 ])
 .config(function($stateProvider,$urlRouterProvider){
 	$urlRouterProvider.otherwise("/home");
@@ -20,7 +21,21 @@ angular.module("wzry",['ngWaterfall','ui.router','angularCSS','homeModule','matc
 	})
 	.controller('heroscontrol',['$scope','$http',function($scope,$http){
 		$http.get("components/heros/heroList.json").success(function(res){
-			$scope.arrHeros=res.data
+//			$scope.arrherosort=[];
+//			$scope.arrheroall=[];
+//			$scope.arrHeros=res.data
+//			for(var i=0;i<$scope.arrHeros.length;i++){
+//				$scope.arrheroall.push($scope.arrHeros[i].heroST)
+//			};
+//			alert(2);
+//			for(var j=0;j<$scope.arrheroall.length;j++){
+//				if($scope.arrheroall.indexOf($scope.arrheroall[j])==-1){
+//					alert(1)
+//					$scope.arrherosort.push($scope.arrheroall[j])
+//				}
+//			}
+//			console.log($scope.arrherosort)
+			
 			$scope.he_isActive0=false;
 			$scope.he_isActive=true;
 			$scope.herosort=function(evenHeros){
@@ -31,7 +46,7 @@ angular.module("wzry",['ngWaterfall','ui.router','angularCSS','homeModule','matc
 		})
 	}])
 	
-/*2.首页-论坛*/
+/*2.首页-更新服*/
 	.config(function($stateProvider,$urlRouterProvider){
 		$stateProvider
 			.state('exper',{
@@ -68,7 +83,12 @@ angular.module("wzry",['ngWaterfall','ui.router','angularCSS','homeModule','matc
 				$scope.menuShow=!$scope.menuShow;
 			}
 		})
+		$http.get("components/community/con_json/con1.json").success(function(res){
+			$scope.arrConText=res.rsp_obj.QueryTopTopic_1.data.pageContent;
+			console.log(res.rsp_obj.QueryTopTopic_1.data.pageContent)
+		})
 	}])
+	
 	
 /*4.首页-论坛*/
 	.config(function($stateProvider,$urlRouterProvider){
@@ -82,4 +102,18 @@ angular.module("wzry",['ngWaterfall','ui.router','angularCSS','homeModule','matc
 	})
 	.controller('storycontrol',['$scope','$http',function($scope,$http){
 		alert('故事');
+	}])
+	
+/*5，首页-活动*/	
+	.config(function($stateProvider,$urlRouterProvider){
+		$stateProvider
+			.state('huodong',{
+				url:'/huodong',
+				templateUrl:'components/huodong/huodong.html',
+				controller:'huodongcontrol',
+				css:'components/huodong/huodong.css'
+			})
+	})
+	.controller('huodongcontrol',['$scope','$http',function($scope,$http){
+		
 	}])

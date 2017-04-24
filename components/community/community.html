@@ -1,22 +1,68 @@
+
 <div id="community">
-	<div class="top_head">
-		<span><a ui-sref="home" href=""><</a></span>
-		<div class="current" ng-click="menushow()">{{menuname}}<div class="cusanj"></div></div>	
-		<ul class="con_menulist" ng-show="menuShow">
-			<li ng-repeat="item in arrMenulist" ng-click="addmenu(item.forum_title)">
-				<a href="">{{item.forum_title}}</a>
-			</li>
-		</ul>
-	</div>
 	<div class="con_guanzhu">
+		<div class="top_head">
+			<span><a ui-sref="home" href=""><</a></span>
+			<div class="current" ng-click="menushow()">{{menuname}}<div class="cusanj"></div></div>	
+			<ul class="con_menulist" ng-show="menuShow">
+				<li ng-repeat="item in arrMenulist" ng-click="addmenu(item.forum_title)">
+					<a href="">{{item.forum_title}}</a>
+				</li>
+			</ul>
+		</div>
 		<div class="con_guanzhu_nei">
 			<a href="http://agame.qq.com/game/200330345/detail.shtml?ADTAG=game.web.yxzj#">
 				<img src="https://shp.qpic.cn/gqq_photo/2016012719/8BBA575B-E55D-2CD6-0DFD-ECAE52C95FB6-650A026E0D21/197"/>
 			</a>	
 			<div class="c_guan">
-				<p>王者荣耀</p>
-				<p><span>关注</span></p>
+				<h3>王者荣耀</h3>
+				<p><span>关注&nbsp;99999</span>&nbsp;&nbsp;&nbsp;<span>帖子&nbsp;789999</span></p>
+				<div class="con_btn_guan">
+					<a href="http://agame.qq.com/bbs_joy/forum.shtml?fid=56891&frompcbbs=1&mod=forumdisplay&ADTAG=game.web.yxzj&c=forum&m=forum">
+						<i>+</i><span>关注</span></a>
+				</div>
 			</div>
 		</div>
+		<div class="con_reds">
+			<a href="">
+				<div class="title">本版红人&nbsp;170</div>
+				<div class="user">
+					<span><img src="https://q3.qlogo.cn/g?b=qq&amp;k=GwzREMBqWBUCtwgD2qviatw&amp;s=100&amp;t=1400722903"></span>
+					<span><img src="https://q1.qlogo.cn/g?b=qq&amp;k=FPjbOMGQKmUBMkRibKaL8bQ&amp;s=100&amp;t=1371258823"></span>
+					<span><img src="https://q2.qlogo.cn/g?b=qq&amp;k=IE351hvLQhT8QibfkOEjkwQ&amp;s=100&amp;t=1409489079"></span>
+					<span><img src="https://q3.qlogo.cn/g?b=qq&amp;k=YwUWlciaMG90xuudgjJjkow&amp;s=100&amp;t=1413599152"></span>
+					<span><img src="https://shp.qlogo.cn/cobrahall/68757360085/1482245487/50"></span>
+				</div>
+			</a>
+		</div>
+		<ul class="text_list">
+			<li><a href="topic.shtml?webview=2&fid=57643&tid=6042423945421248">
+				<i>置顶</i>嘘~你有23封信等待查收
+			</a></li>
+			<li><a href="topic.shtml?webview=2&fid=56891&tid=6051477928698304">
+				<i>置顶</i><i>图</i>《王者荣耀》五·五开黑节悬念第二趴！峡谷议长来上课？
+			</a></li>
+			<li><a href="topic.shtml?webview=2&fid=56891&tid=6048579892715968">
+				<i>置顶</i><i>图</i>近期“登录游戏超时”异常公告说明
+			</a></li>
+		</ul>
 	</div>
+	<div class="pindao">
+		<a href="http://bao.qq.com/channel-list.shtml?from=bbs&gameId=200330345&ADTAG=game.web.yxzj#">
+			<strong>王者荣耀频道</strong>
+			<p>398个频道，小伙伴正聊得火热</p>
+			<img src="http://shp.qpic.cn/gqq_photo/0/syb_bbs_admin_img_1446190174/0"/>
+		</a>
+	</div>
+	<ul id="con_ul">
+		<li ng-repeat="item in arrConText">
+			<div class="g-box">
+				<div class="g-user">
+					<a href=""><img src="{{item.user_info.face}}"/></a>
+					<a href="" class="name">{{item.content_info.author_name}}</a>
+					<p class="timer"></p>
+				</div>
+			</div>
+		</li>
+	</ul>
 </div>
