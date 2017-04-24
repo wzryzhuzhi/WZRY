@@ -13,5 +13,5 @@
 #heros>.heros_list>ul>li>a>img{width:0.7rem;border-radius: 5px;}
 #heros>.heros_list>ul>li>a>p{width:0.7rem;font-size:0.1rem;color:#6d6d6f;height:0.16rem;line-height:0.16rem;margin-top:0.05rem;text-align:center;}
 /*切换样式*/
-.he_active{background:none;}
+/*.he_active{background:none;}*/
 .he_inactive{background:url(hreos_img/hero_nav.png)no-repeat;background-size:auto ;color:#fff;}

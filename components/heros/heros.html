@@ -1,13 +1,13 @@
 <div id="heros">
 	<div class="heros_nav">
-		<ul>
-			<li ng-click="herosort()"><a href="" ng-class="{true: 'he_active', false: 'he_inactive'}[he_isActive0]">全部</a></li>
-			<li ng-click="herosort('战士')"><a href="" ng-class="{true: 'he_active', false: 'he_inactive'}[he_isActive]">战士</a></li>
-			<li ng-click="herosort('法师')"><a href="" ng-class="{true: 'he_active', false: 'he_inactive'}[he_isActive]">法师</a></li>
-			<li ng-click="herosort('坦克')"><a href="" ng-class="{true: 'he_active', false: 'he_inactive'}[he_isActive]">坦克</a></li>
-			<li ng-click="herosort('刺客')"><a href="" ng-class="{true: 'he_active', false: 'he_inactive'}[he_isActive]">刺客</a></li>
-			<li ng-click="herosort('射手')"><a href="" ng-class="{true: 'he_active', false: 'he_inactive'}[he_isActive]">射手</a></li>
-			<li ng-click="herosort('辅助')"><a href="" ng-class="{true: 'he_active', false: 'he_inactive'}[he_isActive]">辅助</a></li>
+		<ul ng-init="num=0">
+			<li ng-click="herosort();num=0"><a href="" ng-class="{'he_inactive':num==0}">全部</a></li>
+			<li ng-click="herosort('战士');num=1"><a href="" ng-class="{'he_inactive':num==1}">战士</a></li>
+			<li ng-click="herosort('法师');num=2"><a href="" ng-class="{'he_inactive':num==2}">法师</a></li>
+			<li ng-click="herosort('坦克');num=3"><a href="" ng-class="{'he_inactive':num==3}">坦克</a></li>
+			<li ng-click="herosort('刺客');num=4"><a href="" ng-class="{'he_inactive':num==4}">刺客</a></li>
+			<li ng-click="herosort('射手');num=5"><a href="" ng-class="{'he_inactive':num==5}">射手</a></li>
+			<li ng-click="herosort('辅助');num=6"><a href="" ng-class="{'he_inactive':num==6}">辅助</a></li>
 		</ul>
 		<div class="clearfix"></div>
 	</div>
