@@ -3,6 +3,9 @@ angular.module("wzry",['ngWaterfall','ui.router','angularCSS','homeModule','matc
 'mostNewModule','herosModule','newHandModule','officialModule','collegauesModule',
 /*赛事*/
 'v_saishiModule','yingxiongModule','vjieshuoModule','v_yuleModule','v_guanfangModule'
+/*故事站*/
+//,'storyModule'
+
 ])
 .config(function($stateProvider,$urlRouterProvider){
 	$urlRouterProvider.otherwise("/home");
@@ -81,5 +84,10 @@ angular.module("wzry",['ngWaterfall','ui.router','angularCSS','homeModule','matc
 			})
 	})
 	.controller('storycontrol',['$scope','$http',function($scope,$http){
-		alert('故事');
+		$http.get('components/story/json/home.json').success(function(res){
+			$scope.arr=res;
+		})
+		$scope.fun=function(){
+			
+		}
 	}])
