@@ -2,7 +2,13 @@ angular.module("wzry",['ngWaterfall','ui.router','angularCSS','homeModule','matc
 /*攻略*/
 'mostNewModule','herosModule','newHandModule','officialModule','collegauesModule',
 /*赛事*/
+<<<<<<< HEAD
+'v_saishiModule','yingxiongModule','vjieshuoModule','v_yuleModule','v_guanfangModule'
+/*故事站*/
+//,'storyModule'
+=======
 'v_saishiModule','yingxiongModule','vjieshuoModule','v_yuleModule','v_guanfangModule',
+>>>>>>> 66b23d1c7f1a703f2cc90e54db88aab87c3f3e94
 
 ])
 .config(function($stateProvider,$urlRouterProvider){
@@ -129,6 +135,14 @@ angular.module("wzry",['ngWaterfall','ui.router','angularCSS','homeModule','matc
 			})
 	})
 	.controller('storycontrol',['$scope','$http',function($scope,$http){
+<<<<<<< HEAD
+		$http.get('components/story/json/home.json').success(function(res){
+			$scope.arr=res;
+		})
+		$scope.fun=function(){
+			
+		}
+=======
 		alert('故事');
 	}])
 	
@@ -143,5 +157,6 @@ angular.module("wzry",['ngWaterfall','ui.router','angularCSS','homeModule','matc
 			})
 	})
 	.controller('huodongcontrol',['$scope','$http',function($scope,$http){
-		
+		console.log('hd');
+>>>>>>> 66b23d1c7f1a703f2cc90e54db88aab87c3f3e94
 	}])

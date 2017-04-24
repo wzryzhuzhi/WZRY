@@ -39,9 +39,6 @@ angular.module('videoModule',[])
 			$scope.arr5=res.msg.result;	
 		});
 	
-//		$scope.fun=function(){
-//			console.log(1243)
-//		}
 }]);
     
 
