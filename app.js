@@ -2,11 +2,12 @@ angular.module("wzry",['ngWaterfall','ui.router','angularCSS','homeModule','matc
 /*攻略*/
 'mostNewModule','herosModule','newHandModule','officialModule','collegauesModule',
 /*赛事*/
-'v_saishiModule','yingxiongModule','vjieshuoModule','v_yuleModule','v_guanfangModule'
+'v_saishiModule','yingxiongModule','vjieshuoModule','v_yuleModule','v_guanfangModule',
+/*八页*/
+'newhandModule','mesModule'
 ])
 .config(function($stateProvider,$urlRouterProvider){
 	$urlRouterProvider.otherwise('/home');
-	console.log(1111111111)
 })
 
 /*1.首页-英雄列表*/

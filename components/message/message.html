@@ -1,0 +1,20 @@
+<div id="mes_auto">
+	<div id="mes">
+		<ul class="mesul" ng-init="msgnum=0">
+			<li><a href="" ng-click="changemsg(msgnum);msgnum=0" ng-class="{'msgnum':msgnum==0}">热门</a></li>
+			<li><a href="" ng-click="changemsg(msgnum);msgnum=1" ng-class="{'msgnum':msgnum==1}">新闻</a></li>
+			<li><a href="" ng-click="changemsg(msgnum);msgnum=2" ng-class="{'msgnum':msgnum==2}">公告</a></li>
+			<li><a href="" ng-click="changemsg(msgnum);msgnum=3" ng-class="{'msgnum':msgnum==3}">活动</a></li>
+			<li><a href="" ng-click="changemsg(msgnum);msgnum=4" ng-class="{'msgnum':msgnum==4}">赛事</a></li>
+		</ul>
+		<div id="wai">
+			<ul id="content">
+				<li ng-repeat="item in arrMes">
+					<a href="">{{item.sTitle}}</a>
+					<span>{{item.sCreated}}</span>
+				</li>
+				<div ng-show="infinite_isCmp"></div>
+			</ul>
+		</div>
+	</div>
+</div>
