@@ -1,0 +1,15 @@
+angular.module('joinTheKingModule',[])
+.config(function($stateProvider,$urlRouterProvider){
+	$stateProvider
+		.state('newhand.joinTheKing',{
+			url:'/joinTheKing',
+			templateUrl:'components/newhand/joinTheKing/joinTheKing.html',
+			controller:'joinTheKingcontrol',
+			css:['components/newhand/joinTheKing/joinTheKing.css','components/newhand/newhand.css']
+		})
+})
+.controller("joinTheKingcontrol",['$scope','$location',function($scope,$location){
+	$scope.a=function(id){
+			$location.hash(id);
+		}
+}])

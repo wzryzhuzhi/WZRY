@@ -1,0 +1,15 @@
+angular.module("originModule",[])
+   .config(function($stateProvider,$urlRouterProvider){
+   	$stateProvider
+   	.state('story.origin',{
+		url:'/origin',
+		templateUrl:'components/story/origin/origin.html',
+		controller:'origincontrol',
+		css:['components/story/story.css','components/story/origin/origin.css']
+   	})	
+   })
+	.controller('origincontrol',['$scope','$http',function($scope,$http){
+			$http.get('components/story/json/origin.json').success(function(res){
+				$scope.storyOrigin=res;
+			})
+		}])

@@ -1,17 +1,32 @@
 [
 	{
-		"url":"http://game.gtimg.cn/images/yxzj/act/a20160510story/idx_pic1.jpg"
+		"url":"http://game.gtimg.cn/images/yxzj/act/a20160510story/idx_pic1.jpg",
+		"text":"··········375年前至今",
+		"imgs":"http://game.gtimg.cn/images/yxzj/act/a20160510story/rdo.png",
+		"imgUrl":"//pvp.qq.com/webplat/info/news_version3/15592/18024/23901/24878/24883/24901/m15564/201607/482175.shtml"
 	},
 	{
-		"url":"http://game.gtimg.cn/images/yxzj/act/a20160510story/idx_pic2.jpg"
+		"url":"http://game.gtimg.cn/images/yxzj/act/a20160510story/idx_pic2.jpg",
+		"text":"··········距今1500年前",
+		"imgs":"http://game.gtimg.cn/images/yxzj/act/a20160510story/rdo.png",
+		"imgUrl":"//pvp.qq.com/webplat/info/news_version3/15592/18024/23901/24878/24882/24899/m15564/201607/482168.shtml"
 	},
 	{
-		"url":"http://game.gtimg.cn/images/yxzj/act/a20160510story/idx_pic3.jpg"
+		"url":"http://game.gtimg.cn/images/yxzj/act/a20160510story/idx_pic3.jpg",
+		"text":"··········距今4000年前",
+		"imgs":"http://game.gtimg.cn/images/yxzj/act/a20160510story/rdo.png",
+		"imgUrl":"//pvp.qq.com/webplat/info/news_version3/15592/18024/23901/24878/24881/24897/m15564/201607/482154.shtml"
 	},
 	{
-		"url":"http://game.gtimg.cn/images/yxzj/act/a20160510story/idx_pic4.jpg"
+		"url":"http://game.gtimg.cn/images/yxzj/act/a20160510story/idx_pic4.jpg",
+		"text":"··········距今1.6W年前",
+		"imgs":"http://game.gtimg.cn/images/yxzj/act/a20160510story/rdo.png",
+		"imgUrl":"//pvp.qq.com/webplat/info/news_version3/15592/18024/23901/24878/24880/24895/m15564/201607/482143.shtml"
 	},
 	{
-		"url":"http://game.gtimg.cn/images/yxzj/act/a20160510story/idx_pic5.jpg"
+		"url":"http://game.gtimg.cn/images/yxzj/act/a20160510story/idx_pic5.jpg",
+		"text":"··········距今180W年前",
+		"imgs":"http://game.gtimg.cn/images/yxzj/act/a20160510story/rdo.png",
+		"imgUrl":"//pvp.qq.com/webplat/info/news_version3/15592/18024/23901/24878/24879/24893/m15564/201607/482129.shtml"
 	}
 ]

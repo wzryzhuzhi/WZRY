@@ -1,0 +1,15 @@
+angular.module("storyHomeModule",[])
+   .config(function($stateProvider,$urlRouterProvider){
+   	$stateProvider
+   	.state('story.storyHome',{
+		url:'/storyHome',
+		templateUrl:'components/story/storyHome/storyHome.html',
+		controller:'storyHomecontrol',
+		css:['components/story/story.css','components/story/storyHome/storyHome.css']
+   	})	
+   })
+	.controller('storyHomecontrol',['$scope','$http',function($scope,$http){
+		$http.get('components/story/json/home.json').success(function(res){
+			$scope.arrStory=res;
+		})
+	}])

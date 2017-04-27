@@ -1,1 +1,9 @@
-<h6>的空间风刀霜剑</h6>
+<div id="newhand">
+	<ul class="forNew-list" ng-init="newnum=0">
+		<li><a href="" ui-sref='home'></a></li>
+		<li><a href="" ui-sref='.joinTheKing' ng-class="{'chosen-yes':newnum==0}" ng-click="newnum=0">走进王者荣耀</a></li>
+		<li><a href="" ui-sref='.guidesForNew' ng-class="{'chosen-yes':newnum==1}" ng-click="newnum=1">新手指南</a></li>
+		<li><a href="" ui-sref='.recForNew' ng-class="{'chosen-yes':newnum==2}" ng-click="newnum=2">新手推荐</a></li>
+	</ul>
+	<div class="forNew-show" ui-view></div>
+</div>

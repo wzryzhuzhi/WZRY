@@ -1,0 +1,108 @@
+.forNew-show >h3{
+	height: 0.47rem;
+	line-height: 0.6rem;
+	background: url(../../../img/go_icon_01.png)no-repeat left 0.24rem;
+	background-size:0.13rem 0.13rem ;
+	text-indent:0.15rem;
+	font-weight: normal;
+}
+.forNew-show >h3:nth-of-type(2){
+	background: url(../../../img/go_icon_04.png)no-repeat left 0.24rem;
+	background-size:0.13rem 0.13rem ;
+}
+.forNew-intr{
+	width: 100%;
+	background: #fff;
+	padding:0.1rem 0.1rem 0;
+}
+.forNew-intr img{
+	display: block;
+	height:1.68rem;
+	width:100%;
+	border-radius: 0.03rem;
+}
+.forNew-intr h3{
+	font-size: 0.16rem;
+	height: 0.48rem;
+	width:100%;
+	line-height:0.5rem;
+	font-weight:normal;
+}
+.forNew-intr  p{
+	font-size:0.13rem;
+	line-height:0.2rem;
+}
+.forNew-intr1{
+	height: 3.4rem;
+	width: 100%;
+	background: #fff;
+}
+.forNew-intr1 .forNew-intr2{
+	height: 15%;
+	width: 100%;
+	position:relative;
+	padding:0.1px;
+}
+.forNew-intr1 .forNew-intr2 ul{
+	height: 0.23rem;
+	width:100%;
+	position: absolute;
+	top:0.3rem;
+}
+.forNew-intr1 .forNew-intr2 ul li{
+	height: 0.23rem;
+	width:0.23rem;
+	border-radius: 50%;
+	border:1px solid #d9d9d9;
+	float: left;
+	margin: 0 0.2rem;
+}
+.forNew-intr1 .forNew-intr2 ul li a{
+	display: block;
+	height: 0.2rem;
+	width:0.2rem;
+	border-radius: 50%;
+	background: #2784e0;
+	position: relative;
+}
+.forNew-intr1 .forNew-intr2 ul li a span{
+	position: absolute;
+	height: 0.22rem;
+	width:0.54rem;
+	top:-0.22rem;
+	left: -0.15rem;
+	text-align:center;
+	background: url(../../../img/back.png) no-repeat;
+	background-size:100% 90% ;
+}
+.forNew-intr1 .outer{
+	height: 85%;
+	width: 100%;
+	overflow: hidden;
+}
+.forNew-intr2 >p{
+	width: 2.5rem;
+	height:0.03rem;
+	border:1px solid red;
+	background: #fff;
+	margin: 0.4rem auto 0;
+}
+.forNew-intr1 .outer div{
+	height: 100%;
+	width:100%;
+	padding:0 0.1rem;
+	overflow: hidden;
+}
+.forNew-intr1 .outer div h3{
+	height: 0.46rem;
+	line-height: 0.46rem;
+}
+.forNew-intr1 .outer div p{
+	font-size:.0.14rem;
+	line-height: 0.16rem;
+}
+.forNew-intr1 .outer div img{
+	display: block;
+	height: 1.7rem;
+	width: 100%;
+}
