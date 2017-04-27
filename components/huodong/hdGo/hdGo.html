@@ -1,0 +1,21 @@
+<div id="hdGo">
+	<div class="hdGoTop">
+		<ul>
+			<li><a href="" ng-class="{true:'hdHerosa_active',false:'hdHeros_inactive'}[isActiveNum1]" ng-click="hdGoChangeBg('isActiveNum1');heroWho()">全部</a></li>
+			<li><a href="" ng-class="{true:'hdHerosa_active',false:'hdHeros_inactive'}[isActiveNum2]" ng-click="hdGoChangeBg('isActiveNum2');heroWho('战士')">战士</a></li>
+			<li><a href="" ng-class="{true:'hdHerosa_active',false:'hdHeros_inactive'}[isActiveNum3]" ng-click="hdGoChangeBg('isActiveNum3');heroWho('法师')">法师</a></li>
+			<li><a href="" ng-class="{true:'hdHerosa_active',false:'hdHeros_inactive'}[isActiveNum4]" ng-click="hdGoChangeBg('isActiveNum4');heroWho('坦克')">坦克</a></li>
+			<li><a href="" ng-class="{true:'hdHerosa_active',false:'hdHeros_inactive'}[isActiveNum5]" ng-click="hdGoChangeBg('isActiveNum5');heroWho('刺客')">刺客</a></li>
+			<li><a href="" ng-class="{true:'hdHerosa_active',false:'hdHeros_inactive'}[isActiveNum6]" ng-click="hdGoChangeBg('isActiveNum6');heroWho('射手')">射手</a></li>
+			<li><a href="" ng-class="{true:'hdHerosa_active',false:'hdHeros_inactive'}[isActiveNum7]" ng-click="hdGoChangeBg('isActiveNum7');heroWho('辅助')">辅助</a></li>
+		</ul>
+	</div>
+	<div class="hdGoBot">
+		<ul>
+			<li ng-repeat="item in arrEndGoHeros | filter:herosFilterName">
+				<img src="{{item.imgUrl}}" />
+				<a href="">{{item.name}}</a>
+			</li>
+		</ul>
+	</div>
+</div>

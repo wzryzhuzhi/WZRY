@@ -1,0 +1,67 @@
+#hdEnd{
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: #F1F1F1;
+}
+
+#hdEnd>.hdEndTop{
+	width: 100%;
+	height: 0.38rem;
+	line-height: 0.38rem;
+	border-bottom: 1px solid #E1E1E1;
+}
+#hdEnd>.hdEndTop>span:first-child{
+	float: left;
+	margin: 0 0.1rem;
+}
+#hdEnd>.hdEndTop>span:last-child{
+	float: right;
+	margin-right: 0.1rem;
+}
+#hdEnd>.hdEndTop>a{
+	color: #4394E4;
+}
+
+#hdEnd>.hdEndMid{
+	width: 100%;
+	padding: 0 0.2rem;
+}
+#hdEnd>.hdEndMid>img{
+	width: 100%;
+	margin: 0.1rem 0;
+}
+#hdEnd>.hdEndMid>p{
+	line-height: 0.19rem;
+}
+#hdEnd>.hdEndMid>.hdEndp1{
+	margin-top: 0.1rem;
+}
+#hdEnd>.hdEndMid>.hdEndp2{
+	margin-bottom: 0.2rem;
+}
+#hdEnd>.hdEndMid>.hdEndp4{
+	margin-bottom: 0.15rem;
+}
+#hdEnd>.hdEndMid>.hdEndp7{
+	margin-top: 0.15rem;
+}
+
+
+#hdEnd>.hdEndBot{
+	width: 100%;
+	height: 0.38rem;
+	padding: 0 0.2rem;
+	line-height: 0.38rem;
+	border-top: 3px solid #E1E1E1;
+}
+#hdEnd>.hdEndBot>span{
+	width: 0.38rem;
+	height: 100%;
+	float: left;
+	background: url(../hdImg/hdEndlBot.png) no-repeat;
+	margin-top: 7px;
+}
+#hdEnd>.hdEndBot>p{
+	color: #4394E4;
+}

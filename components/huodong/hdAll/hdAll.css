@@ -1,0 +1,22 @@
+#hdAll{
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+#hdAll>.hdAllHead{
+	width: 100%;
+	height: 0.4rem;
+}
+
+#hdAll>.hdAllHead li{
+	width: 20%;
+	height: 0.4rem;
+	border-radius: 50%;
+	margin-top: 0.2rem;
+	margin-left: 0.15rem;
+	float: left;
+	line-height: 0.4rem;
+	text-align: center;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+}

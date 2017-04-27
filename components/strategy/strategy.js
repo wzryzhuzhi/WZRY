@@ -24,11 +24,18 @@ angular.module('strategyModule',[])
 		$scope.arrBan=res.msg.result;
 		//console.log(res.msg.result);
 	});
-//	$scope.isActive=false;
-//	$scope.strChangeBg=function(){
-//		$scope.isActive=true;
-//	}
-	function strChangeBg($scope){
-		$scope.isActive=true;
-	}
+	
+	$scope.isActive1=true;
+	$scope.isActive2=false;
+	$scope.isActive3=false;
+	$scope.isActive4=false;
+	$scope.isActive5=false;
+	$scope.strChangeBg=function(str){
+		$scope.isActive1=false;
+		$scope.isActive2=false;
+		$scope.isActive3=false;
+		$scope.isActive4=false;
+		$scope.isActive5=false;
+		$scope[str] = true;
+	};
 }])

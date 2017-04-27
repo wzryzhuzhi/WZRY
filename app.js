@@ -1,6 +1,7 @@
 angular.module("wzry",['ngWaterfall','ui.router','angularCSS','homeModule','matchModule','videoModule','strategyModule',
 /*攻略*/
 'mostNewModule','herosModule','newHandModule','officialModule','collegauesModule','strmnpageModule','mnPageDetailsModule',
+'huodongModule','dhAllModule','hdGoModule','hdEndModule',
 /*赛事*/
 'v_saishiModule','yingxiongModule','vjieshuoModule','v_yuleModule','v_guanfangModule',
 /*八页*/
@@ -136,18 +137,4 @@ angular.module("wzry",['ngWaterfall','ui.router','angularCSS','homeModule','matc
 			
 		}
 		alert('故事');
-	}])
-	
-/*5，首页-活动*/	
-	.config(function($stateProvider,$urlRouterProvider){
-		$stateProvider
-			.state('huodong',{
-				url:'/huodong',
-				templateUrl:'components/huodong/huodong.html',
-				controller:'huodongcontrol',
-				css:'components/huodong/huodong.css'
-			})
-	})
-	.controller('huodongcontrol',['$scope','$http',function($scope,$http){
-		console.log('hd');
 	}])

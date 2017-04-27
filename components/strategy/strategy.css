@@ -64,6 +64,8 @@
 	position: relative;
 	/*background-color: #D6B77E;*/
 }
+
+/*========================================================*/
 #strategy .active{
 	background-color: #D6B77E;
 }

@@ -1,0 +1,37 @@
+angular.module('hdGoModule',[])
+.config(function($stateProvider,$urlRouterProvider){
+		$stateProvider
+			.state('hdGo',{
+				url:'/hdGo',
+				templateUrl:'components/huodong/hdGo/hdGo.html',
+				controller:'hdGocontrol',
+				css:'components/huodong/hdGo/hdGo.css'
+			})
+	})
+	.controller('hdGocontrol',['$scope','$http',function($scope,$http){
+		$http.get('components/huodong/hdjson/hdHeroslist.json').success(function(res){
+			//console.log(res.data);
+			$scope.arrEndGoHeros=res.data;
+			$scope.heroWho=function(heros){
+				$scope.herosFilterName=heros;
+			}
+		});
+		
+		$scope.isActiveNum1=true;
+		$scope.isActiveNum2=false;
+		$scope.isActiveNum3=false;
+		$scope.isActiveNum4=false;
+		$scope.isActiveNum5=false;
+		$scope.isActiveNum6=false;
+		$scope.isActiveNum7=false;
+		$scope.hdGoChangeBg=function(str){
+			$scope.isActiveNum1=false;
+			$scope.isActiveNum2=false;
+			$scope.isActiveNum3=false;
+			$scope.isActiveNum4=false;
+			$scope.isActiveNum5=false;
+			$scope.isActiveNum6=false;
+			$scope.isActiveNum7=false;
+			$scope[str] = true;
+		};
+	}])

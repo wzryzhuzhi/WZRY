@@ -1,0 +1,13 @@
+angular.module('hdEndModule',[])
+.config(function($stateProvider,$urlRouterProvider){
+		$stateProvider
+			.state('hdEnd',{
+				url:'/hdEnd',
+				templateUrl:'components/huodong/hdEnd/hdEnd.html',
+				controller:'hdEndcontrol',
+				css:'components/huodong/hdEnd/hdEnd.css'
+			})
+	})
+	.controller('hdEndcontrol',['$scope',function($scope){
+		//console.log('hdEndcontrol');
+	}])

@@ -15,11 +15,11 @@
 	</div>
 	<!--分页面-->
 	<div class="pages">
-		<a ui-sref='.mostNew' ng-class="{true: 'active', false: 'inactive'}[isActive]" ng-click="strChangeBg()">最新<span></span></a>
-		<a ui-sref='.newHand' href="" ng-class="{true: 'active', false: 'inactive'}[isActive]" ng-click="strChangeBg()">新手<span></span></a>
-		<a ui-sref='.heros' href="" ng-class="{true: 'active', false: 'inactive'}[isActive]" ng-click="strChangeBg()">英雄<span></span></a>
-		<a ui-sref='.official' href="" ng-class="{true: 'active', false: 'inactive'}[isActive]" ng-click="strChangeBg()">官方<span></span></a>
-		<a ui-sref='.collegaues' href="" ng-class="{true: 'active', false: 'inactive'}[isActive]" ng-click="strChangeBg()">同人<span></span></a>
+		<a ui-sref='.mostNew' ng-class="{true: 'active', false: 'inactive'}[isActive1]" ng-click="strChangeBg('isActive1')">最新<span></span></a>
+		<a ui-sref='.newHand' href="" ng-class="{true: 'active', false: 'inactive'}[isActive2]" ng-click="strChangeBg('isActive2')">新手<span></span></a>
+		<a ui-sref='.heros' href="" ng-class="{true: 'active', false: 'inactive'}[isActive3]" ng-click="strChangeBg('isActive3')">英雄<span></span></a>
+		<a ui-sref='.official' href="" ng-class="{true: 'active', false: 'inactive'}[isActive4]" ng-click="strChangeBg('isActive4')">官方<span></span></a>
+		<a ui-sref='.collegaues' href="" ng-class="{true: 'active', false: 'inactive'}[isActive5]" ng-click="strChangeBg('isActive5')">同人<span></span></a>
 	</div>
 	<div class="pageContent" ui-view>
 		

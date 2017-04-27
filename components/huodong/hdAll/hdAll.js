@@ -1,0 +1,13 @@
+angular.module('dhAllModule',[])
+.config(function($stateProvider,$urlRouterProvider){
+		$stateProvider
+			.state('hdAll',{
+				url:'/hdAll',
+				templateUrl:'components/huodong/hdAll/hdAll.html',
+				controller:'hdAllcontrol',
+				css:['components/huodong/huodong.css','components/huodong/hdAll/hdAll.css']
+			})
+	})
+	.controller('hdAllcontrol',['$scope',function($scope){
+		console.log('hdAllcontrol');
+	}])

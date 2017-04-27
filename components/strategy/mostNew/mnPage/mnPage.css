@@ -1,3 +1,15 @@
+
+#strategy>.swiper-container{
+	display: none;
+}
+#strategy>.inputDiv{
+	display: none;
+}
+#strategy>.pages{
+	display: none;
+}
+
+
 #mnPage{
 	width: 100%;
 	height: 100%;
