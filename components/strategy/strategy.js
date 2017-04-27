@@ -20,8 +20,15 @@ angular.module('strategyModule',[])
 }])
 .controller('strategycontrol',['$scope','$http','swiper3',function($scope,$http){
 	$http.get("components/strategy/json/ban.json").success(function(res){
-		console.log(res);
+		//console.log(res);
 		$scope.arrBan=res.msg.result;
-		console.log(res.msg.result);
+		//console.log(res.msg.result);
 	});
+//	$scope.isActive=false;
+//	$scope.strChangeBg=function(){
+//		$scope.isActive=true;
+//	}
+	function strChangeBg($scope){
+		$scope.isActive=true;
+	}
 }])

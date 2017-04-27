@@ -1,0 +1,57 @@
+#mnPageDetails{
+	width: 100%;
+	background-color: #F1F1F1;
+	padding: 0 0.2rem;
+}
+
+#mnPageDetails img{
+	width: 100%;
+}
+
+#mnPageDetails>.mnpdTop{
+	height: 0.38rem;
+	line-height: 0.38rem;
+}
+#mnPageDetails>.mnpdTop>a{
+	color: blue;
+	font-weight: bold;
+	margin-left: 0.05rem;
+}
+#mnPageDetails>.mnpdTop>span:first-child{
+	float: left;
+}
+#mnPageDetails>.mnpdTop>span:last-child{
+	float: right;
+}
+
+#mnPageDetails>.mnpdWordAndPic p{
+	line-height: 0.21rem;
+}
+#mnPageDetails>.mnpdWordAndPic h3{
+	line-height: 0.21rem;
+}
+
+#mnPageDetails>.mnpdBot{
+	margin-bottom: 50px;
+}
+
+#mnPageDetails>.mnpdBot>p{
+	line-height: 0.19rem;
+}
+#mnPageDetails>.mnpdBot>p:first-child{
+	line-height: 0.38rem;
+	color: blue;
+}
+#mnPageDetails>.mnpdBot>p>span{
+	float: right;
+}
+
+#mnPageDetails>.mnpdBot>p:nth-of-type(1)>span{
+	float: left;
+	width: 24px;
+	height: 24px;
+	background: url(../../../strImg/mnpdImg/mnodPicBack.png) no-repeat;
+	background-size: contain;
+	margin-top: 7px;
+	margin-right: 5px;
+}
