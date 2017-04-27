@@ -1,12 +1,14 @@
-<div id="story">
-	<img src="components/story/img/big.jpg" id="imgs"/>
-	<ul id="storyHome"  ui-view>
-		<li><a href="" ng-repeat="item in arr"><img src="{{item.url}}"/></a></li>
-	</ul>
-	<div id="storyTab" ui-view>
-			<div><a ui-sref="" href="www.baidu.com"></a></div>
-			<div><a ui-sref="" href=""></a></div>
-			<div><a ui-sref="" href=""></a></div>
-			<div><a ui-sref="" href=""></a></div>
+<div id="story" >	
+	<div id="storyMain" ui-view>
+			<img src="components/story/img/big.jpg" id="imgs"/>	
+			<ul id="storyHome">
+				<li><a href="" ng-repeat="item in arr"><img src="{{item.url}}"/></a></li>
+			</ul>
+	</div>
+	<div id="storyTab">
+			<div><a ui-sref='story.storyHome' href="" ng-click="storyHomefun()"></a></div>
+			<div><a ui-sref='origin' href="" ng-click="storyHomefun()"></a></div>
+			<div><a ui-sref='worldMap' href="" ng-click="storyHomefun()"></a></div>
+			<div><a ui-sref='heroStory' href="" ng-click="storyHomefun()"></a></div>
 	</div>
 </div>
