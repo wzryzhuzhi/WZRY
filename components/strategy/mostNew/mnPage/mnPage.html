@@ -1,0 +1,84 @@
+<div id="mnPage" ui-view>
+	<div class="inputDiv" id="inputDiv">
+		<a href=""></a>
+		<input type="text" placeholder="请输入你想要的英雄名" value="" />
+		<span><span></span></span>
+	</div>
+	<div class="sort">
+		<ul>
+			<li>排序：</li>
+			<li>按时间↑↓</li>
+			<li>按热度↑↓</li>
+			<li ng-click="mnPageChangeShow()">筛选<span>~</span></li>
+		</ul>
+	</div>
+	<div class="sortFilter" ng-show=isShow>
+		<div class="strmnNewhand">
+			<p>新手：<span>全部</span></p>
+			<div>
+				<ul>
+					<li>铭文系统</li>
+					<li>战队</li>
+					<li>局内道具</li>
+					<li>召唤师技能</li>
+					<li>对战模式</li>
+					<li>经济系统</li>
+				</ul>
+			</div>
+
+		</div>
+		<div class="strmnHeros">
+			<p>英雄：<span>全部</span></p>
+			<div>
+				<ul>
+					<li>限免英雄</li>
+					<li>辅助</li>
+					<li>射手</li>
+					<li>法师</li>
+					<li>刺客</li>
+					<li>战士</li>
+					<li>坦克</li>
+				</ul>
+			</div>
+
+		</div>
+		<div class="strmnOfficial">
+			<p>新手：<span>全部</span></p>
+			<div>
+				<ul>
+					<li>测试</li>
+					<li>官方英雄攻略</li>
+					<li>版本爆料</li>
+				</ul>
+			</div>
+
+		</div>
+		<div class="strmnCol">
+			<p>同人：<span>全部</span></p>
+			<div>
+				<ul>
+					<li>同人文学</li>
+					<li>四格漫画</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="sortDetails">
+		<ul>
+			<li ng-repeat="item in arrDetails">
+				<span>最新</span>
+				<a ui-sref='.mnPageDetails' href="javascript:voidd(0)" id="aa">{{item.sTitle}}</a>
+				<span>2012-04-22</span>
+			</li>
+			<li ng-repeat="item in arrDetails2">
+				<span>最新</span>
+				<a ui-sref='.mnPageDetails' href="javascript:voidd(0)" id="aa">{{item.sTitle}}</a>
+				<span>2012-04-22</span>
+			</li>
+		</ul>
+	</div>
+	<div class="mnClickMore">
+		<p>点击查看更多</p>
+	</div>
+</div>

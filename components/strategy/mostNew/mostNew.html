@@ -1,7 +1,7 @@
-<div id="mostNew">
+<div id="mostNew" ui-view>
 	<ul>
-		<li ng-repeat="item in arrMostNew">
-			<a href="javascript:void(0)"><img src='{{item.sIMG}}' /></a>
+		<li ng-repeat="item in arrMostNew" ui-sref='.mnPage'>
+			<a href="javascript:void(0)"><img src="{{item.sIMG}}" /></a>
 			<div>
 				<span class="topSpan">
 					<span>{{item.sTitle}}</span>
@@ -16,8 +16,8 @@
 	</ul>
 	
 	<ul>
-		<li ng-repeat="item in arrMostNew2">
-			<a href="javascript:void(0)"><img src='{{item.sIMG}}' /></a>
+		<li ng-repeat="item in arrMostNew2" ui-sref='.mnPage'>
+			<a href="javascript:void(0)"><img src="{{item.sIMG}}" /></a>
 			<div>
 				<span class="topSpan">
 					<span>{{item.sTitle}}</span>
@@ -32,8 +32,8 @@
 	</ul>
 	
 	<ul>
-		<li ng-repeat="item in arrMostNew3">
-			<a href="javascript:void(0)"><img src='{{item.sIMG}}' /></a>
+		<li ng-repeat="item in arrMostNew3" ui-sref='.mnPage'>
+			<a href="javascript:void(0)"><img src="{{item.sIMG}}" /></a>
 			<div>
 				<span class="topSpan">
 					<span>{{item.sTitle}}</span>
@@ -48,8 +48,8 @@
 	</ul>
 	
 	<ul>
-		<li ng-repeat="item in arrMostNew4">
-			<a href="javascript:void(0)"><img src='{{item.sIMG}}' /></a>
+		<li ng-repeat="item in arrMostNew4" ui-sref='.mnPage'>
+			<a href="javascript:void(0)"><img src="{{item.sIMG}}" /></a>
 			<div>
 				<span class="topSpan">
 					<span>{{item.sTitle}}</span>
@@ -64,8 +64,8 @@
 	</ul>
 	
 	<ul>
-		<li ng-repeat="item in arrMostNew5">
-			<a href="javascript:void(0)"><img src='{{item.sIMG}}' /></a>
+		<li ng-repeat="item in arrMostNew5" ui-sref='.mnPage'>
+			<a href="javascript:void(0)"><img src="{{item.sIMG}}" /></a>
 			<div>
 				<span class="topSpan">
 					<span>{{item.sTitle}}</span>
@@ -80,6 +80,11 @@
 	</ul>
 	
 	<div class="clickMore">
-		<p><a href="javascript:void(0)">点击查看更多</a></p>
+		<p><a href="javascript:void(0)" href="">点击查看更多</a></p>
 	</div>
+</div>
+
+
+<div class="mnPageBox">
+	
 </div>

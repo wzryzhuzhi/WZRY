@@ -1,12 +1,4 @@
-angular.module("wzry",['ngWaterfall','ui.router','angularCSS','homeModule','matchModule','videoModule','strategyModule',
-/*攻略*/
-'mostNewModule','herosModule','newHandModule','officialModule','collegauesModule',
-/*视频*/
-'v_saishiModule','yingxiongModule','vjieshuoModule','v_yuleModule','v_guanfangModule',
-'storyModule','storyHomeModule','originModule','worldMapModule','heroStoryModule',
-/*八页*/
-'newhandModule','mesModule'
-])
+angular.module("wzry",['ngWaterfall','ui.router','angularCSS','homeModule','matchModule','videoModule','strategyModule','mostNewModule','herosModule','newHandModule','officialModule','collegauesModule','strmnpageModule','mnPageDetailsModule','v_saishiModule','yingxiongModule','vjieshuoModule','v_yuleModule','v_guanfangModule','storyModule','storyHomeModule','originModule','worldMapModule','heroStoryModule','newhandModule','mesModule'])
 .config(function($stateProvider,$urlRouterProvider){
 	$urlRouterProvider.otherwise('/home');
 })
