@@ -1,0 +1,44 @@
+#newhand{height:100%;width:100%;}
+#newhand .forNew-list{
+	height:0.3rem;
+	width:100%;
+	background:#fff;
+	border-bottom: 1px solid #eaeaea;
+}
+#newhand .forNew-list li{
+	width: 30%;
+	height: 100%;
+	float: left;
+	border-right:1px solid #eaeaea;
+}
+#newhand .forNew-list li:nth-last-child{
+	border: none;
+}
+#newhand .forNew-list li:nth-child(1){
+	width:10%;
+}
+#newhand .forNew-list li:nth-child(1) a{
+	background: url(../../img/sign.png)no-repeat;
+	background-size: 100% 100%;
+}
+#newhand .forNew-list li a{
+	display: block;
+	height: 100%;
+	width:100%;
+	line-height: 250%;
+	/*background: url(../../img/go_icon_02.png)no-repeat;
+	background-size:100% 100% ;*/
+	text-align: center;
+}
+#newhand .chosen-yes{
+	color: #fff;
+	background: url(../../img/go_icon_02.png)no-repeat;
+	background-size:100% 100% ;	
+}
+#newhand .forNew-show{
+	width:100%;
+	/*height:6rem;*/
+	background:#f1f1f1;
+	padding-bottom:0.46rem;
+	font-size:0.13rem;
+}
