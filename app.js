@@ -1,8 +1,9 @@
 angular.module("wzry",['ngWaterfall','ui.router','angularCSS','homeModule','matchModule','videoModule','strategyModule',
 /*攻略*/
 'mostNewModule','herosModule','newHandModule','officialModule','collegauesModule',
-/*赛事*/
+/*视频*/
 'v_saishiModule','yingxiongModule','vjieshuoModule','v_yuleModule','v_guanfangModule',
+'storyModule','storyHomeModule','originModule','worldMapModule','heroStoryModule',
 /*八页*/
 'newhandModule','mesModule'
 ])
@@ -119,24 +120,7 @@ angular.module("wzry",['ngWaterfall','ui.router','angularCSS','homeModule','matc
 	
 	
 /*4.首页-论坛*/
-	.config(function($stateProvider,$urlRouterProvider){
-		$stateProvider
-			.state('story',{
-				url:'/story',
-				templateUrl:'components/story/story.html',
-				controller:'storycontrol',
-				css:'components/story/story.css'
-			})
-	})
-	.controller('storycontrol',['$scope','$http',function($scope,$http){
-		$http.get('components/story/json/home.json').success(function(res){
-			$scope.arr=res;
-		})
-		$scope.fun=function(){
-			
-		}
-		alert('故事');
-	}])
+
 	
 /*5，首页-活动*/	
 	.config(function($stateProvider,$urlRouterProvider){
