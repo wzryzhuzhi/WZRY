@@ -5,7 +5,9 @@ angular.module("wzry",['ngWaterfall','ui.router','angularCSS','homeModule','matc
 /*赛事*/
 'v_saishiModule','yingxiongModule','vjieshuoModule','v_yuleModule','v_guanfangModule',
 /*八页*/
-'newhandModule','mesModule'
+'newhandModule','mesModule',
+/*故事站*/
+'storyModule','storyHomeModule','worldMapModule','heroStoryModule','originModule'
 ])
 .config(function($stateProvider,$urlRouterProvider){
 	$urlRouterProvider.otherwise('/home');
@@ -115,26 +117,4 @@ angular.module("wzry",['ngWaterfall','ui.router','angularCSS','homeModule','matc
 //	            pushContent();                      //调用向$scope.posts添加内容函数
 //	        }
 //	    });	
-	}])
-	
-	
-	
-/*4.首页-论坛*/
-	.config(function($stateProvider,$urlRouterProvider){
-		$stateProvider
-			.state('story',{
-				url:'/story',
-				templateUrl:'components/story/story.html',
-				controller:'storycontrol',
-				css:'components/story/story.css'
-			})
-	})
-	.controller('storycontrol',['$scope','$http',function($scope,$http){
-		$http.get('components/story/json/home.json').success(function(res){
-			$scope.arr=res;
-		})
-		$scope.fun=function(){
-			
-		}
-		alert('故事');
 	}])
