@@ -1,7 +1,7 @@
 angular.module("originModule",[])
    .config(function($stateProvider,$urlRouterProvider){
    	$stateProvider
-   	.state('origin',{
+   	.state('story.origin',{
 		url:'/origin',
 		templateUrl:'components/story/origin/origin.html',
 		controller:'origincontrol',
@@ -9,5 +9,7 @@ angular.module("originModule",[])
    	})	
    })
 	.controller('origincontrol',['$scope','$http',function($scope,$http){
-		
+			$http.get('components/story/json/origin.json').success(function(res){
+				$scope.storyOrigin=res;
+			})
 		}])

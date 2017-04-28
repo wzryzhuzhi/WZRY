@@ -1,4 +1,10 @@
-angular.module("wzry",['ngWaterfall','ui.router','angularCSS','homeModule','matchModule','videoModule','strategyModule','mostNewModule','herosModule','newHandModule','officialModule','collegauesModule','strmnpageModule','mnPageDetailsModule','v_saishiModule','yingxiongModule','vjieshuoModule','v_yuleModule','v_guanfangModule','storyModule','storyHomeModule','originModule','worldMapModule','heroStoryModule','newhandModule','mesModule'])
+angular.module("wzry",['ngWaterfall','ui.router','angularCSS','homeModule','matchModule','videoModule','strategyModule',
+
+'mostNewModule','herosModule','newHandModule','officialModule','collegauesModule','strmnpageModule','mnPageDetailsModule',
+
+'v_saishiModule','yingxiongModule','vjieshuoModule','v_yuleModule','v_guanfangModule','storyModule','storyHomeModule','originModule','worldMapModule','heroStoryModule',
+//'linkModule',
+'newhandModule','mesModule'])
 .config(function($stateProvider,$urlRouterProvider){
 	$urlRouterProvider.otherwise('/home');
 })
@@ -71,7 +77,6 @@ angular.module("wzry",['ngWaterfall','ui.router','angularCSS','homeModule','matc
 			
 		})
 		
-		/*瀑布流》》》》》》>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 //		$scope.page=1 ,loading=true;
 //		$scope.arrConP = [];
 //		function pushContent() {                    //核心是这个函数，向$scope.posts

@@ -8,8 +8,8 @@ angular.module("storyHomeModule",[])
 		css:['components/story/story.css','components/story/storyHome/storyHome.css']
    	})	
    })
-	.controller('storycontrol',['$scope','$http',function($scope,$http){
+	.controller('storyHomecontrol',['$scope','$http',function($scope,$http){
 		$http.get('components/story/json/home.json').success(function(res){
-			$scope.arr=res;
+			$scope.arrStory=res;
 		})
-		}])
+	}])

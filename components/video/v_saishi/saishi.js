@@ -9,6 +9,7 @@ angular.module('v_saishiModule',[])
         })
 })
 .controller('v_saishiCtrl',['$scope',function($scope){
+	
 }])
 //传值
 //懒加载(自定义指令)

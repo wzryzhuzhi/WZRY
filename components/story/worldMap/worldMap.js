@@ -1,7 +1,7 @@
 angular.module("worldMapModule",[])
    .config(function($stateProvider,$urlRouterProvider){
    	$stateProvider
-   	.state('worldMap',{
+   	.state('story.worldMap',{
 		url:'/worldMap',
 		templateUrl:'components/story/worldMap/worldMap.html',
 		controller:'worldMapcontrol',
